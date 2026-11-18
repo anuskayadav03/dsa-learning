@@ -6,16 +6,15 @@ public class increasingNum {
     public static void main(String[] args){
     try(Scanner sc = new Scanner(System.in)){
     int n = sc.nextInt();
-    increasingNum(n);
+    printIncreasing(n);
  }
 }
 
-public static void increasingNum(int n){
+public static void printIncreasing(int n){
      if(n==0){
         return;
     }
-    
-    increasingNum( n-1 );
     System.out.println(n);
+   printIncreasing( n-1 );
 }
 }
